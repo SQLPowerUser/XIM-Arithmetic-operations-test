@@ -2,6 +2,7 @@
   <div class="main" id="main">
 
     <div class="main-header">
+      <p> <a href="https://github.com/SQLPowerUser/XIM-Arithmetic-operations-test.git" target="_blank">Open source on Github</a> <br><br> </p>
       <p class="main-header--title">Show additional buttons:</p>
       <label v-for="(value,flag) in this.$store.state.flags">
         <input type="checkbox" :value="flag" @input="toggleButton" :checked="value">
@@ -27,6 +28,12 @@
 
 
 <style>
+a {
+	text-decoration: none!important;
+	outline: none!important;
+  color: #3A6EA5;
+}
+
 .main {
   position: relative;
   display: grid;
